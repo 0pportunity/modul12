@@ -1,12 +1,24 @@
-﻿using System;
-
-namespace modul12
+﻿// <copyright file="Program.cs" company="CompanyName">
+//     Company copyright tag.
+// </copyright>
+namespace Modul12
 {
-    class Program
+    using System;
+    using System.Threading;
+
+    /// <summary>
+    /// Program class
+    /// </summary>
+    public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// method Main
+        /// </summary>
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            User user = new User("login1", false);
+
+            User.HelloUser(user);
         }
     }
 }
